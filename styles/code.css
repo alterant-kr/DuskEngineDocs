@@ -1,0 +1,67 @@
+/*
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+code.css
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+*/
+
+/*
+--------------------------------------------------------------------------------
+Mosopaced Font General Style
+--------------------------------------------------------------------------------
+*/
+
+code, pre {
+	font-family: "Ubuntu Mono", monospace;
+	color: rgb(200, 200, 255);
+}
+
+/*
+--------------------------------------------------------------------------------
+Code Style
+--------------------------------------------------------------------------------
+*/
+
+code {
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	border: solid;
+	border-width: 1px;
+	border-color: rgb(60, 59, 58);
+	border-radius: 5px;
+	background-color: rgb(45, 44, 43);
+}
+
+/*
+--------------------------------------------------------------------------------
+Preformatted Text Style
+--------------------------------------------------------------------------------
+*/
+
+pre {
+	padding-left: 4px;
+	padding-right: 4px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+pre code {
+	padding-left: 6px;
+	padding-right: 6px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	overflow: scroll;
+	display: block;
+
+	scrollbar-arrow-color: rgb(255, 255, 0);
+	scrollbar-face-color: rgb(0, 0, 0);
+	scrollbar-3dlight-color: rgb(255, 255, 0);
+	scrollbar-darkshadow-color: rgb(255, 255, 0);
+	scrollbar-track-color: rgb(60, 60, 0);
+	scrollbar-base-color: rgb(255, 255, 0);
+}
