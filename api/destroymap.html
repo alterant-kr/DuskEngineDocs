@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>dusk.getPreference()</title>
+	<title>dusk.buildMap()</title>
 	<style type="text/css">
 	/* @import url(http://fonts.googleapis.com/css?family=Trykker:400);
 	@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono:400); */
@@ -21,30 +21,31 @@
 	</div>
 	
 	<div class="content">
-		<h3 class="entry-title"><code>dusk.getPreference()</code></h3>
+		<h3 class="entry-title"><code>map.destroy()</code></h3>
 		
 		<h4 class="key">Description:</h4>
 		<ul>
-			<li>Retrieves the value of a library preference. See the <a href="preferences.html">preference guide</a> for information on preference values.</li>
+			<li>Removes map from memory. Make sure map is set to nil after using to eliminate chances of memory leaks.</li>
 		</ul>
 
 		<h4 class="key">Syntax:</h4>
 		<ul>
-			<li><code>dusk.getPreference(preferenceName)</code></li>
+			<li><code>map.destroy()</code></li>
 		</ul>
 
 		<h4 class="key">Arguments:</h4><br>
 		<ul>
-			<li><code>preferenceName</code> <mini>(string, required)</mini> : The name of the preference to retrieve. Names are case-sensitive.</li>
+			<li>(none)</li>
 		</ul>
 		
 		<h4 class="key">Returns:</h4><br>
 		<ul>
-			<li><code>preference</code> <mini>(preference value)</mini> : The retrieved value of the corresponding preference.</li>
+			<li>(none)</li>
 		</ul>
 
 		<h4 class="key">Example:</h4><br>
-		<pre><code>local virtualObjectsVisible = dusk.getPreference("virtualObjectsVisible")</code></pre>
+		<pre><code>map.destroy()
+map = nil</code></pre>
 	</div>
 
 	<footer></footer>

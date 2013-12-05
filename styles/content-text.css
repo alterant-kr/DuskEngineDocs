@@ -111,6 +111,14 @@ a.label {
 	display: block;
 }
 
+a.code * {
+	color: rgb(200, 200, 255);
+}
+
+a.code:hover * {
+	color: rgb(255, 255, 0);
+}
+
 a:hover {
 	color: rgb(255, 255, 0);
 }

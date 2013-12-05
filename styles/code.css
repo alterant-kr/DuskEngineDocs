@@ -55,7 +55,8 @@ pre code {
 	padding-right: 6px;
 	padding-top: 6px;
 	padding-bottom: 6px;
-	overflow: scroll;
+	overflow: auto;
+	tab-size: 2;
 	display: block;
 
 	scrollbar-arrow-color: rgb(255, 255, 0);

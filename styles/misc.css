@@ -39,6 +39,29 @@ div.navbar {
 
 /*
 --------------------------------------------------------------------------------
+Ruler Style
+--------------------------------------------------------------------------------
+*/
+
+ruler {
+	border-color: rgb(220, 220, 255);
+}
+
+ruler.horizontal {
+	border-top: solid;
+	border-top-width: 1px;
+	border-top-color: rgb(220, 220, 255);
+
+	margin-left: 6px;
+	margin-right: 6px;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	width: auto;
+	display: block;
+}
+
+/*
+--------------------------------------------------------------------------------
 Footer Style
 --------------------------------------------------------------------------------
 */
@@ -60,15 +83,24 @@ Button Style
 --------------------------------------------------------------------------------
 */
 
-button {}
+button {
+	border-radius: 4px;
+	background: none;
+	color: rgb(220, 220, 255);
+	border-color: rgb(220, 220, 255);
+	border: solid;
+	border-width: 1px;
+	outline: none;
+}
 
 button:hover {
-	background: rgb(255, 255, 0);
+	background-color: rgb(220, 220, 255);
 	color: rgb(0, 0, 0);
+	border-color: rgb(220, 220, 255);
 }
 
 button:active {
-	background: rgb(150, 150, 0);
+	background: rgb(150, 150, 200);
 }
 
 button.back {
@@ -84,13 +116,8 @@ button.back {
 	float: left;
 }
 
-button:hover {
-	background: rgb(255, 255, 0);
-	color: rgb(0, 0, 0);
-}
-
-button:active {
-	background: rgb(150, 150, 0);
+button[id="hideshow"] {
+	display: none;
 }
 
 /*
