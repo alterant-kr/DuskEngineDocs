@@ -6,7 +6,7 @@ code.css
 --------------------------------------------------------------------------------
 */
 
-@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono:400);
+/*@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,400italic);*/
 
 /*
 --------------------------------------------------------------------------------
@@ -14,9 +14,9 @@ Mosopaced Font General Style
 --------------------------------------------------------------------------------
 */
 
-code, pre {
+code, pre, nanochrome-block *, nanochrome-block {
 	font-family: "Ubuntu Mono", monospace;
-	color: rgb(200, 200, 255);
+	color: #CCCCFF;
 }
 
 /*
@@ -34,7 +34,7 @@ code {
 	border-width: 1px;
 	border-color: rgb(60, 59, 58);
 	border-radius: 5px;
-	background-color: rgb(45, 44, 43);
+	background-color: #2D2C2B;
 }
 
 /*
@@ -66,5 +66,35 @@ pre code {
 	scrollbar-3dlight-color: rgb(255, 255, 0);
 	scrollbar-darkshadow-color: rgb(255, 255, 0);
 	scrollbar-track-color: rgb(60, 60, 0);
-	scrollbar-base-color: rgb(255, 255, 0);
+	scrollbar-base-color: #FFFF00;
+}
+
+/*
+--------------------------------------------------------------------------------
+Nanochrome Syntax Styles
+--------------------------------------------------------------------------------
+*/
+nanochrome-block nanochrome.keyword {
+	color: #0099FF;
+}
+
+nanochrome-block nanochrome.string {
+	color: #8888BB;
+}
+
+nanochrome-block nanochrome.comment {
+	color: #999999;
+	font-style: italic;
+}
+
+nanochrome-block nanochrome.number {
+	color: #FFFFFF;
+}
+
+nanochrome-block nanochrome.defined {
+	color: #00DDEE;
+}
+
+nanochrome-block nanochrome.operator {
+	color: #8888FF;
 }

@@ -3,10 +3,6 @@
 
 <head>
 	<title>Dusk Engine Documentation</title>
-	<style type="text/css">
-	/* @import url(http://fonts.googleapis.com/css?family=Trykker:400);
-	@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono:400); */
-	</style>
 	<link rel="stylesheet" href="styles/lists.css">
 	<link rel="stylesheet" href="styles/content-text.css">
 	<link rel="stylesheet" href="styles/misc.css">
@@ -29,35 +25,35 @@
 
 		<ul>
 			<h4 class="list-title">Map</h4>
-			<li class="model"><a class="label" href="api/mapmodel.html">Map Object Model</a></li>
+			<li class="model"><a class="label" href="api/mapmodel.html">Map</a></li>
 			<li class="label"><a class="label" href="api/destroymap.html"><code>map.destroy()</code></a></li>
 			<li class="label"><a class="label" href="api/updateview.html"><code>map.updateView()</code></a></li>
 		</ul>
 
 		<ul>
 			<h4 class="list-title">Tile Layers</h4>
-			<li class="model"><a class="label" href="api/tilelayermodel.html">Tile Layer Object Model</a></li>
+			<li class="model"><a class="label" href="api/tilelayermodel.html">Tile Layer</a></li>
+			<li class="model"><a class="label" href="api/tilemodel.html">Tile</a></li>
 			<li class="core"><code>layer._drawTile()</code></li>
 			<li class="core"><code>layer._eraseTile()</code></li>
 			<li class="core"><code>layer._redrawTile()</code></li>
 			<li class="core"><code>layer._edit()</code></li>
+			<li class="core"><code>layer.draw()</code></li>
+			<li class="core"><code>layer.erase()</code></li>
 			<li class="label"><a class="label" href="api/layertile.html"><code>layer.tile()</code></a></li>
-			<li class="label"><code>layer.draw()</code></li>
-			<li class="label"><code>layer.erase()</code></li>
+			<li class="label"><a class="label" href="api/layertilebypixels.html"><code>layer.tileByPixels()</code></a></li>
+			<li class="label"><a class="label" href="api/layertilestopixels.html"><code>layer.tilesToPixels()</code></a></li>
+			<li class="label"><a class="label" href="api/layerpixelstotiles.html"><code>layer.pixelsToTiles()</code></a></li>
 		</ul>
 
 		<ul>
 			<h4 class="list-title">Object Layers</h4>
-			<li class="model">Object Layer Object Model</li>
+			<li class="model"><a class="label" href="api/objectlayermodel.html">Object Layer</a></li>
+			<li class="model"><a class="label" href="api/objectmodels.html">Object</a></li>
 			<li class="core"><code>layer._newIterator()</code></li>
 			<li class="core"><code>layer._literal()</code></li>
 			<li class="core"><code>layer._match()</code></li>
-			<li class="label"><code>layer.nameIs()</code></li>
-			<li class="label"><code>layer.nameMatches()</code></li>
-			<li class="label"><code>layer.typeIs()</code></li>
-			<li class="label"><code>layer.typeMatches()</code></li>
-			<li class="label"><code>layer.objTypeIs()</code></li>
-			<li class="label"><code>layer.objects()</code></li>
+			<li class="label"><a class="label" href="api/iterators.html">Iterators</a></li>
 		</ul>
 
 		<ul>
@@ -98,10 +94,11 @@
 		<button id="hideshow">Hide Core</button>
 		<p class="core">Methods marked <font color="#969600">(core)</font> are methods mostly used by the Dusk Engine core processes, but may also be used by you, to gain lower-level control, should you wish to do so. Core-level methods will be documented last.</p>
 
-		<noscript>[Enable JavaScript to hide Core info]</noscript>
+		<noscript><p><mini>[Enable JavaScript to hide Core info]</mini></p></noscript>
 	</div>
-
+	
 	<script src="scripts/hide.js" type="text/javascript"></script>
+	<script src="scripts/lastupdated.js" type="text/javascript"></script>
 
 	<footer></footer>
 </body>

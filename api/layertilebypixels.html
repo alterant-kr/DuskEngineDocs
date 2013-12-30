@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>layer.tile() | Dusk</title>
+	<title>layer.tilesByPixels() | Dusk</title>
 	<link rel="stylesheet" href="../styles/lists.css">
 	<link rel="stylesheet" href="../styles/content-text.css">
 	<link rel="stylesheet" href="../styles/misc.css">
@@ -17,22 +17,22 @@
 	</div>
 	
 	<div class="content">
-		<h3 class="entry-title"><code>layer.tile()</code></h3>
+		<h3 class="entry-title"><code>layer.tileByPixels()</code></h3>
 		
 		<h4 class="key">Description:</h4>
 		<ul>
-			<li>Returns the tile at an XY position in tiles.</li>
+			<li>Returns the tile at an XY position in pixels. Pixels are given in local coordinates for the layer.</li>
 		</ul>
 
 		<h4 class="key">Syntax:</h4>
 		<ul>
-			<li><code>layer.tile(x, y)</code></li>
+			<li><code>layer.tileByPixels(x, y)</code></li>
 		</ul>
 
 		<h4 class="key">Arguments:</h4><br>
 		<ul>
-			<li><code>x</code> <mini>(<a href="xypair.html">XY Pair-X</a>, required)</mini> : The X-coordinate (in tiles) of the tile desired.</li>
-			<li><code>y</code> <mini>(<a href="xypair.html">XY Pair-Y</a>, required)</mini> : The Y-coordinate (in tiles) of the tile desired.</li>
+			<li><code>x</code> <mini>(<a href="xypair.html">XY Pair-X</a>, required)</mini> : The X-coordinate (in pixels) of the tile desired.</li>
+			<li><code>y</code> <mini>(<a href="xypair.html">XY Pair-Y</a>, required)</mini> : The Y-coordinate (in pixels) of the tile desired.</li>
 		</ul>
 		
 		<h4 class="key">Returns:</h4><br>
@@ -41,7 +41,7 @@
 		</ul>
 
 		<h4 class="key">Example:</h4><br>
-		<pre><code>local tile = map.layer[1].tile(10, 10)</code></pre>
+		<pre><code>local tile = map.layer[1].tileByPixels(512, 384)</code></pre>
 	</div>
 
 	<script src="../scripts/nanochrome.js" type="text/javascript"></script>	

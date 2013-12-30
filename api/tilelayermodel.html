@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>Dusk Tile Layer Object Model</title>
+	<title>Tile Layer | Dusk</title>
 	<link rel="stylesheet" href="../styles/lists.css">
 	<link rel="stylesheet" href="../styles/content-text.css">
 	<link rel="stylesheet" href="../styles/misc.css">
@@ -17,13 +17,13 @@
 	</div>
 	
 	<div class="content">
-		<h3 class="entry-title">Dusk Tile Layer Object Model</h3>
+		<h3 class="entry-title">Tile Layer Object Model</h3>
 		
-		<p>This is the object model for a Dusk Tile Layer object created from within <a class="code" href="buildmap.html"><code>dusk.buildMap</code></a> and existing in a <a href="mapmodel.html">Dusk Map</a>. Please note that this page does not include functions, but rather only properties.</p>
+		<p>This is the object model for a Tile Layer object created from within <a class="code" href="buildmap.html"><code>dusk.buildMap</code></a> and existing in a <a href="mapmodel.html">Dusk Map</a>. Please note that this page does not include functions, but rather only properties.</p>
 
 		<ul>
 			<h4 class="list-title">Dusk Tile Layer</h4>
-			<li><code>layer.props</code> : Contains properties set from the Tiled property dialog. This does not mean each property you enter into the property dialog goes here; instead, this only holds properties that were prefixed with <code>props:</code>. This table exists so that you can include properties that normally have another meaning; <code>props:alpha</code> or <code>props:x</code> will not change the layer's opacity or position.</li>
+			<li><code>layer.props</code> : <a href="propstable.html">Properties Table</a></li>
 			<li><code>layer._type</code> : Equal to the string "tile". This property is given to all layers in a map; by having one layer, you can know what kind it is.</li>
 			<li><code>layer._name</code> : The name specified in Tiled, found in the layer listing menu.</li>
 			<li><code>layer.xParallax</code> : Parallax ratio of the layer in the X-direction.</li>
@@ -33,6 +33,7 @@
 		</ul>
 	</div>
 
+	<script src="../scripts/nanochrome.js" type="text/javascript"></script>	
 	<footer></footer>
 </body>
 
